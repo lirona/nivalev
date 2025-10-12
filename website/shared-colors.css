@@ -1,0 +1,16 @@
+/* Shared color scheme for all pages */
+:root {
+  --primary: #D2553A;
+  --background-light: #f8f6f6;
+  --background-dark: #221610;
+  --foreground-light: #221610;
+  --foreground-dark: #f8f6f6;
+  --card-light: #F4EFE9;
+  --card-dark: #3c312a;
+  --muted-light: #9a634c;
+  --muted-dark: #a88e84;
+  --accent-light: #f3ebe7;
+  --accent-dark: #3a2a22;
+  --border-light: #F5F5F4;
+  --border-dark: #4a3c35;
+}

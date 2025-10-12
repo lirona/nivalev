@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ניבה לב - הרשמה למפגש פתוח</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="shared-colors.css">
+    <link rel="stylesheet" href="shared-styles.css">
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "var(--primary)",
+                        "background-light": "var(--background-light)",
+                        "background-dark": "var(--background-dark)",
+                        "foreground-light": "var(--foreground-light)",
+                        "foreground-dark": "var(--foreground-dark)",
+                        "card-light": "var(--card-light)",
+                        "card-dark": "var(--card-dark)",
+                        "muted-light": "var(--muted-light)",
+                        "muted-dark": "var(--muted-dark)",
+                        "accent-light": "var(--accent-light)",
+                        "accent-dark": "var(--accent-dark)",
+                        "border-light": "var(--border-light)",
+                        "border-dark": "var(--border-dark)",
+                    },
+                    fontFamily: {
+                        "sans": ["'Assistant'", "sans-serif"],
+                        "display": ["Assistant", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        "soft": "0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05)",
+                    }
+                },
+            },
+        }
+    </script>
+    <script src="shared-header.js"></script>
+<style>
+    .form-input {
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-shadow: 0 0 #0000;
+    }
+    .group:hover .group-hover\:block {
+        display: block;
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-foreground-light dark:text-foreground-dark">
+<div class="flex flex-col min-h-screen">
+<div id="shared-header"></div>
+<main class="flex-grow flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+<div class="w-full max-w-md space-y-8">
+<div class="text-center">
+<h1 class="text-3xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100 sm:text-4xl">
+            הרשמה למפגש הפתוח הקרוב
+          </h1>
+</div>
+<form action="#" class="mt-8 space-y-6 bg-white dark:bg-background-dark/50 p-8 rounded-xl shadow-sm border border-primary/10 dark:border-primary/20" method="POST">
+<div class="space-y-6">
+<div>
+<label class="block text-sm font-medium text-neutral-700 dark:text-neutral-300" for="name">שם</label>
+<div class="mt-1">
+<input class="form-input w-full px-4 py-3 bg-background-light dark:bg-background-dark border border-primary/20 dark:border-primary/30 rounded-lg text-neutral-900 dark:text-neutral-100 placeholder-neutral-500 dark:placeholder-neutral-400 focus:ring-primary focus:border-primary" id="name" name="name" placeholder="השם שלך" required="" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-neutral-700 dark:text-neutral-300" for="email">כתובת אימייל</label>
+<div class="mt-1">
+<input autocomplete="email" class="form-input w-full px-4 py-3 bg-background-light dark:bg-background-dark border border-primary/20 dark:border-primary/30 rounded-lg text-neutral-900 dark:text-neutral-100 placeholder-neutral-500 dark:placeholder-neutral-400 focus:ring-primary focus:border-primary" id="email" name="email" placeholder="האימייל שלך" required="" type="email"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-neutral-700 dark:text-neutral-300" for="phone">טלפון (אופציונלי)</label>
+<div class="mt-1">
+<input class="form-input w-full px-4 py-3 bg-background-light dark:bg-background-dark border border-primary/20 dark:border-primary/30 rounded-lg text-neutral-900 dark:text-neutral-100 placeholder-neutral-500 dark:placeholder-neutral-400 focus:ring-primary focus:border-primary" id="phone" name="phone" placeholder="הטלפון שלך" type="tel"/>
+</div>
+</div>
+</div>
+<div>
+<button class="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-semibold rounded-lg text-white bg-primary hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary" type="submit">
+              הרשמה
+            </button>
+</div>
+<p class="text-center text-sm text-neutral-600 dark:text-neutral-400">
+            קישור לזום יישלח אליכם במייל לאחר ההרשמה.
+          </p>
+</form>
+</div>
+</main>
+</div>
+</body></html>

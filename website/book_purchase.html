@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>מדע ההתעשרות</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link rel="stylesheet" href="shared-colors.css">
+    <link rel="stylesheet" href="shared-styles.css">
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "var(--primary)",
+                        "background-light": "var(--background-light)",
+                        "background-dark": "var(--background-dark)",
+                        "foreground-light": "var(--foreground-light)",
+                        "foreground-dark": "var(--foreground-dark)",
+                        "card-light": "var(--card-light)",
+                        "card-dark": "var(--card-dark)",
+                        "muted-light": "var(--muted-light)",
+                        "muted-dark": "var(--muted-dark)",
+                        "accent-light": "var(--accent-light)",
+                        "accent-dark": "var(--accent-dark)",
+                        "border-light": "var(--border-light)",
+                        "border-dark": "var(--border-dark)",
+                    },
+                    fontFamily: {
+                        "sans": ["'Assistant'", "sans-serif"],
+                        "display": ["Assistant", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        "soft": "0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05)",
+                    }
+                },
+            },
+        }
+    </script>
+    <script src="shared-header.js"></script>
+<style>
+        body {
+            font-family: 'Heebo', sans-serif;
+        }
+        .group:hover .group-hover\:block {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-foreground-light dark:text-foreground-dark">
+<div class="min-h-screen flex flex-col">
+<div id="shared-header"></div>
+<main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+<div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+<div class="flex flex-col gap-6">
+<div class="aspect-[2/3] w-full max-w-md mx-auto lg:max-w-none bg-center bg-no-repeat bg-cover rounded-xl shadow-lg" style='background-image: url("images/cover-front.jpg");'></div>
+</div>
+<div class="flex flex-col gap-8 text-right">
+<div>
+<h2 class="text-3xl md:text-4xl font-black tracking-tight">מדע ההתעשרות</h2>
+<p class="mt-4 text-lg text-text-light/80 dark:text-text-dark/80">
+                            גלו את הסודות לשפע והגשמה עם המדריך המשנה חיים של ניבה לב. למדו ליישר את האנרגיה שלכם עם זרימת היקום ולהגשים את תשוקותיכם העמוקות ביותר.
+                        </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex flex-col gap-4 p-6 rounded-xl bg-card-light dark:bg-card-dark transition-all hover:shadow-xl hover:-translate-y-1">
+<div class="flex items-center justify-end gap-3">
+<h3 class="font-bold text-lg">קריאה אונליין</h3>
+<span class="material-symbols-outlined text-primary">auto_stories</span>
+</div>
+<p class="text-sm text-text-light/70 dark:text-text-dark/70 flex-grow">גישה לגרסה הדיגיטלית של הספר בכל זמן ומכל מקום.</p>
+<button class="mt-2 w-full flex items-center justify-center rounded-lg h-11 px-5 bg-background-light dark:bg-background-dark text-sm font-bold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+                                צפייה
+                            </button>
+</div>
+<div class="flex flex-col gap-4 p-6 rounded-xl bg-card-light dark:bg-card-dark transition-all hover:shadow-xl hover:-translate-y-1">
+<div class="flex items-center justify-end gap-3">
+<h3 class="font-bold text-lg">הורדה</h3>
+<span class="material-symbols-outlined text-primary">download</span>
+</div>
+<p class="text-sm text-text-light/70 dark:text-text-dark/70 flex-grow">קבלו עותק PDF לקריאה אופליין במכשיר המועדף עליכם.</p>
+<button class="mt-2 w-full flex items-center justify-center rounded-lg h-11 px-5 bg-background-light dark:bg-background-dark text-sm font-bold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+                                הורדה
+                            </button>
+</div>
+<div class="flex flex-col gap-4 p-6 rounded-xl bg-card-light dark:bg-card-dark transition-all hover:shadow-xl hover:-translate-y-1">
+<div class="flex items-center justify-end gap-3">
+<h3 class="font-bold text-lg">האזנה</h3>
+<span class="material-symbols-outlined text-primary">headphones</span>
+</div>
+<p class="text-sm text-text-light/70 dark:text-text-dark/70 flex-grow">תהנו מגרסת האודיו של הספר, בקריינותה של ניבה לב עצמה.</p>
+<button class="mt-2 w-full flex items-center justify-center rounded-lg h-11 px-5 bg-background-light dark:bg-background-dark text-sm font-bold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+                                האזנה
+                            </button>
+</div>
+<div class="flex flex-col gap-4 p-6 rounded-xl bg-card-light dark:bg-card-dark transition-all hover:shadow-xl hover:-translate-y-1">
+<div class="flex items-center justify-end gap-3">
+<h3 class="font-bold text-lg">עותק מודפס</h3>
+<span class="material-symbols-outlined text-primary">local_shipping</span>
+</div>
+<p class="text-sm text-text-light/70 dark:text-text-dark/70 flex-grow">קבלו מהדורה מהודרת בכריכה קשה ישירות עד הבית.</p>
+<button class="mt-2 w-full flex items-center justify-center rounded-lg h-11 px-5 bg-background-light dark:bg-background-dark text-sm font-bold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+                                הזמינו עכשיו
+                            </button>
+</div>
+</div>
+<div class="mt-4">
+<button class="w-full flex items-center justify-center gap-3 rounded-xl h-14 px-6 bg-primary text-white text-lg font-bold hover:opacity-90 transition-opacity shadow-lg shadow-primary/30">
+<span>הוספה לסל - 99.00 ₪</span>
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

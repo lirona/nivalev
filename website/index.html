@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ניבה לב</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link rel="stylesheet" href="shared-colors.css">
+    <link rel="stylesheet" href="shared-styles.css">
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "var(--primary)",
+              "background-light": "var(--background-light)",
+              "background-dark": "var(--background-dark)",
+              "foreground-light": "var(--foreground-light)",
+              "foreground-dark": "var(--foreground-dark)",
+              "card-light": "var(--card-light)",
+              "card-dark": "var(--card-dark)",
+              "muted-light": "var(--muted-light)",
+              "muted-dark": "var(--muted-dark)",
+              "accent-light": "var(--accent-light)",
+              "accent-dark": "var(--accent-dark)",
+              "border-light": "var(--border-light)",
+              "border-dark": "var(--border-dark)",
+            },
+            fontFamily: {
+              "sans": ["'Assistant'", "sans-serif"],
+            },
+            borderRadius: {
+              "DEFAULT": "0.5rem",
+              "lg": "0.75rem",
+              "xl": "1rem",
+              "full": "9999px"
+            },
+            boxShadow: {
+              "soft": "0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05)",
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Assistant', sans-serif;
+      }
+      .group:hover .group-hover\:block {
+        display: block;
+      }
+    </style>
+    <script src="shared-header.js"></script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-foreground-light dark:text-foreground-dark font-sans">
+<div class="min-h-screen flex flex-col">
+<div id="shared-header"></div>
+<main class="flex-grow container mx-auto px-6 py-6 md:py-10">
+<div class="max-w-3xl mx-auto flex flex-col items-center text-center gap-12">
+<div class="flex flex-col items-center gap-6">
+<div class="w-48 h-48 rounded-full bg-cover bg-center shadow-soft" style='background-image: url("images/niva.jpg");'></div>
+<div class="flex flex-col">
+<h2 class="text-4xl font-extrabold text-foreground-light dark:text-foreground-dark">ניבה לב</h2>
+<p class="text-xl text-muted-light dark:text-muted-dark mt-1">מורה לדרך ״מדע ההתעשרות״</p>
+</div>
+<p class="max-w-2xl text-center text-lg text-foreground-light/90 dark:text-foreground-dark/90 leading-relaxed">
+              שמי ניבה לב, ואני כאן כדי ללוות אותך במסע של התפתחות אישית ורוחנית. דרך תורת "מדע ההתעשרות" וכלים נוספים, אני מסייעת לאנשים להתחבר לשפע הפנימי והחיצוני בחייהם, להגשים את ייעודם ולחיות מתוך שמחה, שלווה ואהבה.
+            </p>
+</div>
+<div class="w-full bg-card-light dark:bg-card-dark rounded-xl p-8 shadow-soft border border-border-light dark:border-border-dark flex flex-col items-center gap-6">
+<h3 class="text-3xl font-bold text-foreground-light dark:text-foreground-dark">המפגש הפתוח הבא יתחיל בעוד:</h3>
+<div class="grid grid-cols-4 gap-4 w-full max-w-md text-center">
+<div class="bg-primary/10 dark:bg-primary/20 p-4 rounded-lg flex flex-col items-center justify-center">
+<span class="text-5xl font-bold text-primary">07</span>
+<span class="text-base text-muted-light dark:text-muted-dark">ימים</span>
+</div>
+<div class="bg-primary/10 dark:bg-primary/20 p-4 rounded-lg flex flex-col items-center justify-center">
+<span class="text-5xl font-bold text-primary">14</span>
+<span class="text-base text-muted-light dark:text-muted-dark">שעות</span>
+</div>
+<div class="bg-primary/10 dark:bg-primary/20 p-4 rounded-lg flex flex-col items-center justify-center">
+<span class="text-5xl font-bold text-primary">29</span>
+<span class="text-base text-muted-light dark:text-muted-dark">דקות</span>
+</div>
+<div class="bg-primary/10 dark:bg-primary/20 p-4 rounded-lg flex flex-col items-center justify-center">
+<span class="text-5xl font-bold text-primary">42</span>
+<span class="text-base text-muted-light dark:text-muted-dark">שניות</span>
+</div>
+</div>
+<button class="w-full sm:w-auto bg-primary text-white text-lg font-bold py-3 px-10 rounded-full hover:opacity-90 transition-opacity shadow-lg shadow-primary/30">
+                להרשמה למפגש
+              </button>
+</div>
+<div class="w-full grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
+<div class="bg-card-light dark:bg-card-dark rounded-xl overflow-hidden shadow-soft border border-border-light dark:border-border-dark group transition-all hover:shadow-lg hover:-translate-y-1">
+<div class="w-full h-48 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAIq6MCuSxi2CFStXnbW88ex2wGY9TA_vpB3baAj5zd6hZDrrlEu1A3g4g_LMitcSgkIj6MYdr4KDUwhr-8Y2Lq3ARvw2EW0Ls66a6siNFDt6u4bPTIIQRyvlWaIr-8MJCtqmvqPGU48Z05pmxMfi2YDPUwmEtWzGPpkNv0JUpy4di_FwVEnTQjmrwbG66YD8UBPKdWm6lL8ifbed6SQUz_kQHFPlMe3BvdEPszgHzesvSG-emPSW-HJN5Ez3lknvEAEprp_pdfyL7u");'></div>
+<div class="p-6 text-right">
+<h4 class="text-xl font-bold">קורס אונליין: מדע ההתעשרות</h4>
+<p class="text-base text-muted-light dark:text-muted-dark mt-1">מסע מעשי להגשמת שפע בכל תחומי החיים.</p>
+</div>
+</div>
+<div class="bg-card-light dark:bg-card-dark rounded-xl overflow-hidden shadow-soft border border-border-light dark:border-border-dark group transition-all hover:shadow-lg hover:-translate-y-1">
+<div class="w-full h-48 bg-cover bg-center" style='background-image: url("images/cover-strip.jpg");'></div>
+<div class="p-6 text-right">
+<h4 class="text-xl font-bold">הספר: מדע ההתעשרות</h4>
+<p class="text-base text-muted-light dark:text-muted-dark mt-1">המדריך הקלאסי להצלחה כלכלית ורוחנית.</p>
+</div>
+</div>
+<div class="bg-card-light dark:bg-card-dark rounded-xl overflow-hidden shadow-soft border border-border-light dark:border-border-dark group transition-all hover:shadow-lg hover:-translate-y-1">
+<div class="w-full h-48 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCAViUGaKbGZTQJe6vS_oUt3U-QYtCTXVD2tNwk2FWP57tdYeg98k0sfZsUG-rgUFDBhLDcNxxolYX-WYRLyt7tiP82evk7olHphhWm8yKylb0tWyDnl0Gp4kJM-BE1-AjtJ9Tk_YTZXFweJ1ihe8z7-zKSyAF-E1XfLx2R6np76msOZp1tiru1V3dcXeqjup_i75iYLjrHUDcFA-f-2HKHtsB8XjguOr8KC_VEybGiqnVV_9lqzI6Yg3nYZcWhYS0DZEG5ekrbszXz");'></div>
+<div class="p-6 text-right">
+<h4 class="text-xl font-bold">שאלות ותשובות</h4>
+<p class="text-base text-muted-light dark:text-muted-dark mt-1">כל התשובות לשאלות הנפוצות על התורה והדרך.</p>
+</div>
+</div>
+<div class="bg-card-light dark:bg-card-dark rounded-xl overflow-hidden shadow-soft border border-border-light dark:border-border-dark group transition-all hover:shadow-lg hover:-translate-y-1">
+<div class="w-full h-48 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBaht4u03GI6mlRs_w77jSkwIo3qX66vWxB0Y6LAt5qQ1aqimRG885WOSDRv0_VkfpPO3dp8ec-lqFeRnA2du6sJNI6JDHXt5y2iDi40n-WxujemFkx6AHFwbps9KKgUvGOhGsLiY_TbPUbZiKT98l7SxOjK98EoKv3LA3eLYxpMBQzqYxqKfH2Oh4NnV3iiR7eqDin3RmKI8w6cl5rkP7KZAVbdcs-m1clolafHQcUKITvKwaCruvIQg2nc7MT26Llvs6hrjtmWdJa");'></div>
+<div class="p-6 text-right">
+<h4 class="text-xl font-bold">המפגש הפתוח הקרוב</h4>
+<p class="text-base text-muted-light dark:text-muted-dark mt-1">הזדמנות ללמוד, לשתף ולהתחבר לקהילה.</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>
