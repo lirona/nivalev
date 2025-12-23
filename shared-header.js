@@ -25,7 +25,7 @@ function loadSharedHeader() {
             <div class="dropdown-menu absolute bg-card-light dark:bg-card-dark shadow-soft rounded-lg mt-2 py-2 w-60 border border-border-light dark:border-border-dark right-0">
               <a class="block px-4 py-2 text-sm hover:bg-primary/10 dark:hover:bg-primary/20" href="about_niva.html">אודות</a>
               <a class="block px-4 py-2 text-sm hover:bg-primary/10 dark:hover:bg-primary/20" href="open_meeting_registration.html">הרשמה למפגש פתוח</a>
-              <a class="block px-4 py-2 text-sm hover:bg-primary/10 dark:hover:bg-primary/20" href="#">הצטרפות לקבוצת העדכונים השקטה בוואטסאפ</a>
+              <a class="block px-4 py-2 text-sm hover:bg-primary/10 dark:hover:bg-primary/20" href="https://chat.whatsapp.com/JG62kcCU7O6AmukGq6nUgp" target="_blank" rel="noopener noreferrer">הצטרפות לקבוצת העדכונים השקטה בוואטסאפ</a>
             </div>
           </div>
           <div class="dropdown-container">
@@ -34,9 +34,9 @@ function loadSharedHeader() {
               <svg class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
             </button>
             <div class="dropdown-menu absolute bg-card-light dark:bg-card-dark shadow-soft rounded-lg mt-2 py-2 w-64 border border-border-light dark:border-border-dark right-0">
-              <a class="block px-4 py-2 text-sm hover:bg-primary/10 dark:hover:bg-primary/20" href="#">אודות</a>
-              <a class="block px-4 py-2 text-sm hover:bg-primary/10 dark:hover:bg-primary/20" href="#">הספר לצפייה באתר/הורדה/האזנה</a>
-              <a class="block px-4 py-2 text-sm hover:bg-primary/10 dark:hover:bg-primary/20" href="book_purchase.html">רכישת עותק של הספר</a>
+              <a class="block px-4 py-2 text-sm hover:bg-primary/10 dark:hover:bg-primary/20" href="about_book.html">אודות</a>
+              <a class="block px-4 py-2 text-sm hover:bg-primary/10 dark:hover:bg-primary/20" href="book_online.html">הספר לצפייה באתר/הורדה/האזנה</a>
+              <a class="block px-4 py-2 text-sm hover:bg-primary/10 dark:hover:bg-primary/20" href="#">רכישת עותק של הספר</a>
             </div>
           </div>
           <a class="hover:text-primary transition-colors" href="online_course.html">קורס אונליין</a>

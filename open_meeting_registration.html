@@ -68,7 +68,8 @@
             הרשמה למפגש הפתוח הקרוב
           </h1>
 </div>
-<form action="#" class="mt-8 space-y-6 bg-white dark:bg-background-dark/50 p-8 rounded-xl shadow-sm border border-primary/10 dark:border-primary/20" method="POST">
+<div id="formMessage" class="mt-4 p-4 rounded-lg hidden"></div>
+<form id="registrationForm" action="#" class="mt-8 space-y-6 bg-white dark:bg-background-dark/50 p-8 rounded-xl shadow-sm border border-primary/10 dark:border-primary/20" method="POST">
 <div class="space-y-6">
 <div>
 <label class="block text-sm font-medium text-neutral-700 dark:text-neutral-300" for="name">שם</label>
@@ -101,4 +102,65 @@
 </div>
 </main>
 </div>
+<script>
+// Replace 'YOUR_SCRIPT_URL' with your Google Apps Script URL
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzlrT2TRS62IFZPcFcnlZusVvaxf5u5TAXO6Y4_zR09L4bz7Qupsw60qz3j7Q-ZWbaJtg/exec';
+
+const form = document.getElementById('registrationForm');
+const messageDiv = document.getElementById('formMessage');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  const submitButton = form.querySelector('button[type="submit"]');
+  const originalButtonText = submitButton.textContent;
+
+  // Disable button and show loading state
+  submitButton.disabled = true;
+  submitButton.textContent = 'שולח...';
+
+  // Get form data
+  const formData = new FormData(form);
+  const data = {
+    name: formData.get('name'),
+    email: formData.get('email'),
+    phone: formData.get('phone') || '',
+    timestamp: new Date().toLocaleString('he-IL', { timeZone: 'Asia/Jerusalem' })
+  };
+
+  try {
+    const response = await fetch(SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data)
+    });
+
+    // Show success message
+    messageDiv.textContent = 'ההרשמה התקבלה בהצלחה! קישור לזום יישלח אליך במייל בקרוב.';
+    messageDiv.className = 'mt-4 p-4 rounded-lg bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200';
+    messageDiv.classList.remove('hidden');
+
+    // Reset form
+    form.reset();
+
+    // Hide message after 5 seconds
+    setTimeout(() => {
+      messageDiv.classList.add('hidden');
+    }, 5000);
+
+  } catch (error) {
+    // Show error message
+    messageDiv.textContent = 'אירעה שגיאה בשליחה. אנא נסה שוב.';
+    messageDiv.className = 'mt-4 p-4 rounded-lg bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200';
+    messageDiv.classList.remove('hidden');
+  } finally {
+    // Re-enable button
+    submitButton.disabled = false;
+    submitButton.textContent = originalButtonText;
+  }
+});
+</script>
 </body></html>
